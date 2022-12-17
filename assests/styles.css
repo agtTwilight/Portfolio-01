@@ -1,0 +1,51 @@
+* {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+}
+
+header {
+        display: flex;
+        justify-content: space-between;
+        margin: 20px;
+        padding: 10px;
+        border-bottom: 2px solid black;
+}
+
+header p {
+        text-indent: 40px;
+}
+
+header img {
+        position: relative;
+        width: 150px;
+        height: 150px;
+        margin: 10px;
+        border-radius: 50%;
+        right: 40%;
+        transform: translateY(10%);
+}
+
+header li {
+        display: inline;
+        margin: 20px;
+}
+
+h1 span {
+        font-size: 16px;
+        font-weight: normal;
+}
+
+footer {
+        display: block;
+        text-align: center;
+}
+
+footer li {
+        display: inline;
+        margin: 20px;
+}
+
+#about {
+        text-indent: 250px; 
+}
