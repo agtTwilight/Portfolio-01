@@ -11,7 +11,7 @@ header {
         padding: 10px;
         border-bottom: 2px solid black;
 }
-
+/* TODO make your name/image look better */
 header p {
         text-indent: 40px;
 }
@@ -46,6 +46,43 @@ footer li {
         margin: 20px;
 }
 
-#about {
-        text-indent: 250px; 
+.container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+}
+
+.card {
+        position: relative;
+        margin: 40px 20px;
+        padding: 5px;
+        height: 300px;
+        width: 250px;
+        border-radius: 12px;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+        overflow: hidden;
+}
+
+.card img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 12px ;
+}
+
+.card-details {
+        visibility: hidden;
+        padding: 5px;
+        height: 300px;
+        width: 250px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        backdrop-filter: blur(5px);
+        border-radius: 12px;
+}
+
+.card:hover .card-details{
+        visibility: visible;
 }
