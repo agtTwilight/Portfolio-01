@@ -23,11 +23,18 @@ header img {
 header li {
         display: inline;
         margin: 20px;
+        color: black;
 }
 
-h1 span {
-        font-size: 16px;
-        font-weight: lighter;
+a:link {
+        text-decoration: none;
+}
+
+main{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
 }
 
 footer {
@@ -35,41 +42,21 @@ footer {
         justify-content: center;
 }
 
-footer div {
+.projects {
         position: relative;
-        /* overflow: hidden; */
-}
-
-.footer-icon {
-        margin: 40px 40px 5px 40px;
-        height: 40px;
-        width: 40px;
-        cursor: pointer;
-}
-
-.footer-hover{
-        position: absolute;
-        margin: 40px 40px 5px 40px;
-        top: 0;
-        left: 100%;
-        height: 40px;
-        width: 40px;
-        cursor: pointer;
-}
-
-.container {
         display: flex;
         justify-content: center;
         align-items: center;
         flex-wrap: wrap;
+        width: fit-content;
 }
 
 .card {
         position: relative;
-        margin: 40px 20px;
+        margin: 20px 20px;
         padding: 5px;
-        height: 300px;
-        width: 250px;
+        height: 350px;
+        width: 300px;
         border-radius: 12px;
         box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
         overflow: hidden;
@@ -85,9 +72,10 @@ footer div {
 .card-details {
         display: flex;
         flex-direction: column;
+        align-items: center;
         padding: 30px;
-        height: 300px;
-        width: 250px;
+        height: 100%;
+        width: 100%;
         position: absolute;
         top: 0;
         left: 100%;
@@ -111,7 +99,6 @@ footer div {
         display: flex;
         position: absolute;
         bottom: 0;
-        left: 8%;
 }
 
 .card-buttons button {
@@ -126,18 +113,28 @@ footer div {
 .card:hover .card-details{
         left: 0;
 }
+/* TODO make link active only on icon (not margin) hover */
+.footer-icon {
+        margin: 40px 40px 5px 40px;
+        height: 40px;
+        width: 40px;
+        cursor: pointer;
+        filter: brightness(0%);
+}
 
-/* .icon:hover .footer-hover{
-        left: 0;
-} */
-
+.footer-icon:hover {
+        filter: brightness(1);
+}
+/* TODO make this fit at multiple screen sizes */
 #about {
         position: relative;
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
+        padding-top: 25px;
         width: 400px;
-        left: 10%;
+        height: 100vh;
+        left: -20%;
 }
 
 #about h1 {
@@ -155,4 +152,14 @@ footer div {
 #about p {
         padding: 12px;
         line-height: 25px;
+}
+
+#projects {
+        
+}
+
+/* TODO edit flex settings so it better fits the page at different resolutions */
+#spotlight {
+        flex-basis: 75%;
+        height: 400px;
 }
