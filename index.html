@@ -12,9 +12,9 @@
                 <img src="./assests/Loid.png" alt="an avatar of the software developer that made the page. Their avatar is Loid Forger from SpyxFamily.">
                 <nav>
                         <ul>
-                                <li>About</li>
-                                <li>Projects</li>
-                                <li>Connect</li>
+                                <a href="#about"><li>About</li></a>
+                                <a href="#projects"><li>Projects</li></a>
+                                <a href="#connect"><li>Connect</li></a>
                         </ul>
                 </nav>
         </header>
@@ -22,14 +22,15 @@
                 <section id="about">
                         <p>Hello, my name is</p>
                         <h1>Lukas MacMillen.</h1>
-                        <h2>I'm a Software Developer.</h2>
+                        <h2>I am Software Developer.</h2>
                         <p> I am a calm and collected developer with a knack for concision and efficieny. I love teaching others and I want to work together to find new solutions!</p>
                 </section>
-                <section class="container">
-                        <article class="card" id="project1">
+                <h2 id="projects">Projects</h2>
+                <section class="projects">
+                        <article class="card" id="spotlight">
                                 <img src="./assests/cute.jpeg" alt="">
                                 <div class="card-details">
-                                        <h2>Placeholder</h2>
+                                        <h3>Placeholder</h3>
                                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                                         <div class="card-buttons">
                                                 <button type="button">View</button>
@@ -40,7 +41,7 @@
                         <article class="card">
                                 <img src="./assests/cute.jpeg" alt="">
                                 <div class="card-details">
-                                        <h2>Placeholder</h2>
+                                        <h3>Placeholder</h3>
                                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                                         <div class="card-buttons">
                                                 <button type="button">View</button>
@@ -51,8 +52,19 @@
                         <article class="card">
                                 <img src="./assests/cute.jpeg" alt="">
                                 <div class="card-details">
-                                        <h2>Placeholder</h2>
+                                        <h3>Placeholder</h3>
                                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet</p>
+                                        <div class="card-buttons">
+                                                <button type="button">View</button>
+                                                <button type="button">REPO</button>
+                                        </div>
+                                </div>
+                        </article>
+                        <article class="card">
+                                <img src="./assests/cute.jpeg" alt="">
+                                <div class="card-details">
+                                        <h3>Placeholder</h3>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                                         <div class="card-buttons">
                                                 <button type="button">View</button>
                                                 <button type="button">REPO</button>
@@ -61,19 +73,10 @@
                         </article>
                 </section>
         </main>
-        <footer>
-                <div>
-                        <img src="/assests/github-icon.png" alt="" class="footer-icon">
-                        <a href="https://github.com/agtTwilight" target="_blank"><img src="/assests/github-hover.png" alt="" class="footer-hover"></a>
-                </div>
-                <div>
-                        <img src="/assests/linkedin-icon.png" alt="" class="footer-icon">
-                        <a href="https://www.linkedin.com/in/lukas-macmillen-03b2681b2/" target="_blank"><img src="/assests/linkedin-hover.png" alt="" class="footer-hover"></a>
-                </div>
-                <div>
-                        <img src="/assests/mail-icon.png" alt="" class="footer-icon">
-                        <a href="mailto:lukasmacmillen@gmail.com" target="_blank"><img src="/assests/mail-hover.png" alt="" class="footer-hover"></a>
-                </div>
+        <footer id="connect">
+                <a href="https://github.com/agtTwilight" target="_blank"><img src="/assests/github-hover.png" alt="" class="footer-icon"></a>
+                <a href="https://www.linkedin.com/in/lukas-macmillen-03b2681b2/" target="_blank"><img src="/assests/linkedin-hover.png" alt="" class="footer-icon"></a>
+                <a href="mailto:lukasmacmillen@gmail.com" target="_blank"><img src="/assests/mail-hover.png" alt="" class="footer-icon"></a>
         </footer>
 </body>
 </html>
