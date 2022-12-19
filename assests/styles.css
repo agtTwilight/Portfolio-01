@@ -7,23 +7,17 @@
 header {
         display: flex;
         justify-content: space-between;
-        margin: 20px;
-        padding: 10px;
+        align-items: center;
+        padding: 20px 30px;
         border-bottom: 2px solid black;
-}
-/* TODO make your name/image look better */
-header p {
-        text-indent: 40px;
 }
 
 header img {
-        position: relative;
-        width: 150px;
-        height: 150px;
-        margin: 10px;
+        /* padding: 2px; */
+        width: 65px;
+        height: 65px;
         border-radius: 50%;
-        right: 40%;
-        transform: translateY(10%);
+        border: solid black;
 }
 
 header li {
@@ -33,17 +27,34 @@ header li {
 
 h1 span {
         font-size: 16px;
-        font-weight: normal;
+        font-weight: lighter;
 }
 
 footer {
-        display: block;
-        text-align: center;
+        display: flex;
+        justify-content: center;
 }
 
-footer li {
-        display: inline;
-        margin: 20px;
+footer div {
+        position: relative;
+        /* overflow: hidden; */
+}
+
+.footer-icon {
+        margin: 40px 40px 5px 40px;
+        height: 40px;
+        width: 40px;
+        cursor: pointer;
+}
+
+.footer-hover{
+        position: absolute;
+        margin: 40px 40px 5px 40px;
+        top: 0;
+        left: 100%;
+        height: 40px;
+        width: 40px;
+        cursor: pointer;
 }
 
 .container {
@@ -72,17 +83,76 @@ footer li {
 }
 
 .card-details {
-        visibility: hidden;
-        padding: 5px;
+        display: flex;
+        flex-direction: column;
+        padding: 30px;
         height: 300px;
         width: 250px;
         position: absolute;
         top: 0;
-        left: 0;
+        left: 100%;
         backdrop-filter: blur(5px);
         border-radius: 12px;
+        transition: 1.5s;
+}
+
+.card-details h2 {
+        text-transform: capitalize;
+}
+
+.card-details p {
+        font-size: 16px;
+        line-height: 25px;
+        margin: 35px 0;
+        font-weight: 400;
+}
+
+.card-buttons {
+        display: flex;
+        position: absolute;
+        bottom: 0;
+        left: 8%;
+}
+
+.card-buttons button {
+        margin: 15px;
+        padding: 5px;
+        width: 75px;
+        border-radius: 6px;
+        outline: none;
+        cursor: pointer;
 }
 
 .card:hover .card-details{
-        visibility: visible;
+        left: 0;
+}
+
+/* .icon:hover .footer-hover{
+        left: 0;
+} */
+
+#about {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        width: 400px;
+        left: 10%;
+}
+
+#about h1 {
+        font-size: 64px;
+        width: max-content;
+        padding: 12px;
+}
+
+#about h2 {
+        font-size: 48px;
+        width: max-content;
+        padding: 12px;
+}
+
+#about p {
+        padding: 12px;
+        line-height: 25px;
 }
