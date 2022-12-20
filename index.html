@@ -19,6 +19,7 @@
                 </nav>
         </header>
         <main>
+                <!-- The id's "about", "projects" and "connect" make it so i am able to link those sections within my HTML file. -->
                 <section id="about">
                         <p>Hello, my name is</p>
                         <h1>Lukas MacMillen.</h1>
@@ -28,11 +29,14 @@
                 <h2 id="projects">Projects</h2>
                 <p>(hover for detials)</p>
                 <section class="projects">
+                        <!-- the spotlight ID lets me easily change the size of the project I want to display front and center! The card class lets me apply flex rules to all project cards (the spotlight ID also lets me overwrite some of those rules, like sizing) -->
                         <article class="card" id="spotlight">
                                 <img src="./assests/css-snippet-cheat-sheet.png" alt="The spotlight project in the portfolio. The image shows a cheat-sheet website for CSS snippets.">
+                                <!-- This div lets me set the card detial information as position absolute, relative to the card itself. Thus, I am able to make a simple animation on  hover, where the details appear. This is only possible due to the absolute positioning of the content relative to the card, and by turning overflow off for the card body. -->
                                 <div class="card-details">
                                         <h3>CSS Snippet Cheat Sheet</h3>
                                         <p>I made this CSS Snippet Cheat Sheet from scratch during the first week of my coding bootcamp. It was my first time coding with flexbox in CSS, and I learned a lot! I'm proud that just a few days after my flexbox introduction I was able to make this portfolio page from scratch.</p>
+                                        <!-- This div makes repositioning the buttons, separate from the above paragraph, super easy to do in CSS! -->
                                         <div class="card-buttons">
                                                 <a href="https://agttwilight.github.io/css-snippet-cheat-sheet/" target="_blank"><button type="button">View</button></a>
                                                 <a href="https://github.com/agtTwilight/css-snippet-cheat-sheet" target="_blank"><button type="button">REPO</button></a>
