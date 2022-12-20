@@ -28,7 +28,7 @@ header li {
 }
 
 header li:hover {
-        color: #e8a87c;
+        color: #ff9d5c;
 }
 /* I'm not sure where a:link should go in order of css specificity rules. Let me know! */
 a:link {
@@ -56,6 +56,7 @@ footer {
         width: fit-content;
 }
 
+/* overflow hidden is a key reason why I am able to make an animation on hover with my card-details! */
 .card {
         position: relative;
         margin: 20px;
@@ -74,6 +75,7 @@ footer {
         border-radius: 12px ;
 }
 
+/* note that card details is set to be positioned perfectly over the card class, and then left lets me move it just off the border of the card, enabling overflow to hide the card-details while hover is note true. */
 .card-details {
         display: flex;
         flex-direction: column;
@@ -116,10 +118,12 @@ footer {
         cursor: pointer;
 }
 
+/* moves card-details back over the card */
 .card:hover .card-details{
         left: 0;
 }
 
+/* I saved my footer icons in the color I wanted so i could apply brightness 0 and make them black when note being hovered. Pretty cool! */
 .footer-icon {
         margin: 40px 40px 5px 40px;
         height: 40px;
@@ -128,6 +132,7 @@ footer {
         filter: brightness(0%);
 }
 
+/* This lets me color my icons on hover (it just sets the brightness back to the default) */
 .footer-icon:hover {
         filter: brightness(1);
 }
@@ -165,6 +170,7 @@ footer {
         height: 400px;
 }
 
+/* This media query shrinks the spotlight image and about sections to fit on the page at the 1019px breakpoint */
 @media screen and (max-width: 1019px){
         #spotlight {
                 width: 650px;
@@ -174,6 +180,7 @@ footer {
         }
 }
 
+/* This media query sets the spotlight project to match the native size of the card class, and further shrinks the about section to fit clearly on the screen */
 @media screen and (max-width: 650px) {
         #spotlight {
                 width: 300px;
